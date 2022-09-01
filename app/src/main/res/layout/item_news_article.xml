@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <!-- region Root -->
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_p160"
+        android:focusable="true"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clipToPadding="false"
+        android:layout_marginStart="@dimen/size_p4"
+        android:layout_marginEnd="@dimen/size_p4"
+        android:layout_marginBottom="@dimen/size_p4"
+        >
+
+        <FrameLayout
+            android:id="@+id/paymentStatusBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_holder_img"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                style="@style/Ugo.TextAppearance.Text.B1"
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="description"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                style="@style/Ugo.TextAppearance.Text.B2"
+                android:id="@+id/authorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="description"
+                android:layout_marginStart="@dimen/size_p6"
+                android:layout_gravity="bottom"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- endregion -->
+
+</layout>
